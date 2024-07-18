@@ -1,0 +1,27 @@
+This project is a simple task management system implemented in C++. 
+It allows users to manage tasks by providing functionalities to add tasks, view tasks, mark tasks as completed, delete tasks, and filter tasks by category.
+
+Features and Functionalities:
+
+1.Task Class:
+   Attributes: Each task has a description (string), category (string), and completion status (bool).
+   Initialization: Tasks are initialized with a description and category, defaulting the completion status to false.
+2.Vector for Storage:
+   NotesAdded Vector: A vector named NotesAdded is used to store instances of the Task class. This vector dynamically grows as tasks are added and supports operations like adding, deleting, and accessing tasks.
+3.Menu-Driven Interface:
+   DisplayMenu Function: The main interaction with the user occurs through a menu-driven interface.
+   Options:
+     1.Add Task: Allows the user to input a description and category for a new task.
+     2.View Tasks: Displays all tasks currently stored in NotesAdded, showing their description, category, and completion status.
+     3.Mark Task as Completed: Lets the user mark a task as completed based on its index.
+     4.Delete Task: Allows the user to delete a task based on its index.
+     5.Filter Tasks By Category: Displays tasks that match a specific category entered by the user.
+     6.Exit: Ends the program.
+4.Input Handling:
+   cin and getline: Uses cin for numerical input and getline for string input to handle task descriptions, categories, and filter criteria.
+5.Error Handling:
+   Invalid Inputs: Checks for invalid task indices and notifies the user accordingly.
+   Empty List: Displays appropriate messages when attempting operations on an empty task list.
+6.User Feedback:
+   Status Messages: Provides feedback after each operation, confirming successful task addition, deletion, completion marking, etc.
+   Menu Validation: Ensures the user selects a valid menu option and prompts for re-entry if an invalid option is chosen.
