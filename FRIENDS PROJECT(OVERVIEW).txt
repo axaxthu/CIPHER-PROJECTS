@@ -1,0 +1,28 @@
+This C++ project is designed to manage users and their friendships through a menu-driven interface.
+It utilizes maps and sets to store user information and track friendships between users.
+
+Features and Functionalities:
+1.User Class (User):
+  Attributes: Each user has a first name, last name, age, and gender.
+  Initialization: Users are initialized using their first name as a unique identifier (username).
+2.Data Structures:
+  map<string, User> mapUserName: Maps usernames (first names) to User objects.
+  map<string, set<string>> Friends: Maps each user (by username) to a set of usernames representing their friends.
+3.Functions:
+  void addUser(string userName, User user): Adds a new user to mapUserName if the username doesn't already exist.
+  void makeThemFriend(string userName1, string userName2): Establishes a friendship between two users by adding each other to their respective friend sets in Friends.
+  void removeFriendship(string userName1, string userName2): Removes the friendship between two users by deleting each other from their friend sets in Friends.
+  void displayAllUser(): Displays all users and their details stored in mapUserName.
+  void displayAllFriendships(): Displays all friendships stored in Friends, showing which users are friends with whom.
+  void displayMenu(): Displays a menu with options for adding friends, removing friends, viewing friends, viewing all users, and exiting the program.
+4.Menu-Driven Interface (main() function):
+  User Input Handling: Prompts the user to enter details for three users initially, including first name, last name, age, and gender.
+  Menu Options:
+  Add Friend: Allows users to specify two usernames to establish a friendship.
+  Remove Friend: Enables users to specify two usernames to terminate their friendship.
+  View Friends: Displays all current friendships stored in Friends.
+  View All Users: Shows a list of all users and their details stored in mapUserName.
+  Exit: Ends the program execution.
+5.Error Handling:
+  Invalid Input: Provides messages for invalid menu choices and ensures usernames entered for adding or removing friendships exist in mapUserName.
+
