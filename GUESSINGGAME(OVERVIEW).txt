@@ -1,0 +1,30 @@
+This project is a simple number guessing game called "Guess It, Win It."
+
+Objective: The objective of the game is for the player to guess a randomly generated number within a limited number of attempts.
+User Interface: The game provides a text-based user interface where messages and prompts are displayed in the console.
+
+Features:
+
+1.Random Number Generation:
+  At the start of the game, a random number (ranNum) between 0 and 99 is generated using rand() % 100.
+2.Gameplay Mechanics:
+  Guessing Mechanism: The player guesses the number, and the game provides feedback if the guess is too high or too low.
+  Attempts Limit: The player has a fixed number of attempts (trials = 3) to guess the correct number.
+3.Score System:The player starts with a score of 100, which decreases by 10 points after each unsuccessful attempt.
+  Additional deductions occur if the player uses hints.
+4.Hints System:
+   1. Availability: Two hints are available:
+   2. Odd/Even Hint: Reveals whether the number is odd or even.
+   3. Prime/Composite Hint: Reveals whether the number is prime or composite.
+   Usage: Hints can only be used once per game. Each hint usage deducts 10 points from the score.
+5.End of Game:
+   Win Condition: The game ends when the player correctly guesses the number within the allowed attempts (trials).
+   Loss Condition: If the player exhausts all attempts without guessing the number correctly, they lose the game.
+6.User Feedback:
+   After each guess, the game provides feedback on the proximity of the guess to the actual number ("too high," "too low," etc.).
+   Upon winning or losing, appropriate messages are displayed along with the correct number and final score.
+
+Functionality:
+Prime Number Check: Uses a function (isprime()) to check if a number is prime, which influences the hint system.
+Dynamic Interaction: The game dynamically interacts with the player through console inputs (cin) and outputs (cout).
+Score Tracking: Tracks and displays the player's score throughout the game, reflecting deductions for hint usage and unsuccessful attempts.
